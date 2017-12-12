@@ -16,6 +16,7 @@ I will be adding scripts that somehow had helped me at some point with rutinary 
    Replace the **CORRECT_EMAIL** with the new email that will appear in all commits.
 
 Put the file in the GIT project folder you want to change and run: `./git-author-rewrite.sh`
+You can also use `git filter-branch -f --env-filter "GIT_AUTHOR_NAME='Newname'; GIT_AUTHOR_EMAIL='new@email'; GIT_COMMITTER_NAME='Newname'; GIT_COMMITTER_EMAIL='new@email';" HEAD` but be aware that this code will change all the users, even if you have a repo with more than one committer.
 
 
 ## Important
